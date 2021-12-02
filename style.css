@@ -12,11 +12,11 @@
   text-align: right;
 }
 
-.header-image {
+.header__image {
   width: 100%;
 }
 
-.header .header-more-info {
+.header .header__more-info {
   font-family: fantasy, cursive;
 }
 
@@ -42,6 +42,7 @@
 
 .task-row-wrapper {
   display: flex;
+  margin-top: 20px;
 }
 
 .list {
@@ -49,14 +50,9 @@
   padding: 0px;
 }
 
-.list-item,
+.list__item,
 .title {
   list-style: none;
-}
-
-input,
-button{
-  outline: none;
 }
 
 .button {
@@ -67,6 +63,7 @@ button{
   width: 60px;
   font-family: Lato, sans-serif;
   cursor: pointer;
+  outline: none;
 }
 
 .button:hover {
@@ -75,7 +72,7 @@ button{
 
 /* Heading */
 .title,
-.section-add-label {
+.section-add__label {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -96,6 +93,7 @@ button{
   border-radius: 6px;
   font-family: Lato, sans-serif;
   color: #888;
+  outline: none;
 }
 
 .input-text:focus {
@@ -103,17 +101,12 @@ button{
 }
 
 /* New Task */
-.section-add-label {
-  display: block;
-  margin: 0 0 20px;
-}
-
-.section-add-input {
+.section-add__input {
   width: 318px;
 }
 
 /* Task list */
-.list-item {
+.list__item {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -122,43 +115,44 @@ button{
   align-items: center;
 }
 
-.list-item > * {
+.list__item > * {
   vertical-align: middle;
 }
 
-.list-item-checkbox {
+.list-item__checkbox {
   margin: 0 10px;
+  outline: none;
 }
 
-.list-item-label {
+.list-item__label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
 
-.list-item > .input-text {
+.list__item > .input-text {
   width: 226px;
 }
 
-.button-delete-img {
+.button-delete__img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-.button-delete-img:hover {
+.button-delete__img:hover {
   transform: rotateZ(0);
 }
 
 /* Completed */
-.list#completed-tasks .list-item-label {
+.completed-tasks .list-item__label {
   text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
-.list-item .input-text {
+.list__item .input-text {
   display: none;
 }
 
